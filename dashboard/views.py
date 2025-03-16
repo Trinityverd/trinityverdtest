@@ -35,7 +35,7 @@ def dashboard(request):
     display_data = data[:10]
     display_seed = seed_data[:10]
     display_purchase = purchase[:10]
-    total_farmers = data.count(),
+    total_farmers = data.count()
     total_seed_farmers = seed_data.count()
     total_purchase_farmers = purchase.count()
     total_acres = data.aggregate(total_acres=Sum("acres"))["total_acres"] or 0
