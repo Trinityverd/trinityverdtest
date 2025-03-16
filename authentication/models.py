@@ -22,5 +22,5 @@ class UserProfile(models.Model):
 
 
     def __str__(self):
-        return f'{self.user.username} - {','.join(str(sc) for sc in self.sub_county.all())}'
+        return str(self.user.username)
 
