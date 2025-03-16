@@ -1,0 +1,2174 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | Trinity Verd</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-png">
+    <link rel="apple-touch-icon" href="{% static 'images/at-icon.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'images/at-icon.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic"
+          rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arapey:ital@0;1&family=Baskervville+SC&family=Lilita+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style type="text/css">
+        @font-face{
+    font-family:'ip';
+    src:url("{% static 'fonts/ip/font/ip.eot' %}");
+    src:url("{% static 'fonts/ip/font/ip.eot#iefix' %}") format("embedded-opentype"),url("{% static 'fonts/ip/font/ip.woff' %}") format("woff"),url("{% static 'fonts/ip/font/ip.ttf' %}") format("truetype"),url("{% static 'fonts/ip/font/ip.svg' %}") format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face {
+    font-family: "SitkaCustom";
+    src: url("fonts/Sitka.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,input,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
+    margin:0;
+    padding:0;
+    border:0;
+    -webkit-
+    box-sizing:border-box;
+    box-sizing:border-box
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    margin: 0px 0;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block
+}
+nav ol,nav ul{
+    list-style:none
+}
+blockquote,q{
+    quotes:none
+}
+blockquote cite{
+    font-style:normal
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';content:none
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0
+}
+button,input[type=submit]{
+    cursor:pointer
+}
+html,body{
+    width:100%;
+    height:100%;
+    color:#2c3e50;
+    font-family: "SitkaCustom", serif;
+    line-height:1.2
+}
+body{
+    max-width: 1400px;
+    min-width: 320px;
+    min-height: 100vh;
+    background:#fff url("{% static 'images/bodybg.png' %}");
+}
+.container{
+    position:relative;
+    width:98%;
+}
+.container:before,.container:after{
+    display:block;
+    content:'';
+    clear:both;
+    height:0
+}
+.common-section{
+    padding-top:100px;
+    width:100%;
+    margin:15px 15px;
+    clear:both
+}
+.common-section:before,.common-section:after{
+    display:block;
+    content:'';
+    clear:both;
+    height:0
+}
+.common-section__header h2,h4{
+    color: white;
+}
+.common-section__header h2{
+    margin-top: 30px;
+}
+.common-section__header h3{
+    font-family: "SitkaCustom", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-size: 40px;
+      font-style: normal;
+    color: black;
+    margin-top: 30px;
+}
+.common-section__header p{
+    font-size: 22px;
+    align-self: center;
+    font-family: "SitkaCustom", serif;
+}
+    .common-section__header{
+        padding-bottom:20px;
+        text-align:center;
+        float:left;
+        width:98%;
+        width:calc(100% - 40px);
+        height:auto;
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .grid-container{
+        width:100%;
+        margin:0 0;
+        clear:both
+    }
+    .grid-container:before,.grid-container:after{
+        display:block;
+        content:'';
+        clear:both;
+        height:0
+    }
+    ::selection{
+        color:#fff;
+        background-color:#111
+    }
+    ::-moz-selection{
+        color:#fff;
+        background-color:#111
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-weight:400
+    }
+    h1{
+        font-size:60px;
+        font-family: "SitkaCustom", serif;
+    }
+    h2{
+        font-family: "SitkaCustom", serif;
+        font-size:40px
+    }
+    h3{
+        font-size:30px
+    }
+    h4{
+        font-size:20px
+    }
+    h5{
+        font-size:18px
+    }
+    p{
+        font-size:18px
+    }
+    li p{
+        font-family: "SitkaCustom", serif;
+        font-style:italic
+    }
+    a{
+        color:#2c3e50;
+        font-family: "SitkaCustom", serif;
+        font-size:18px;
+        text-decoration:none;
+        outline-style:none;
+        border-bottom:1px dashed #2c3e50
+    }
+    a:hover{
+        border-color:transparent
+    }
+    .container .h11 h1{
+    top: 140%;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.container .h11 span{
+    color: #FFAE42;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.homebut{
+    width: 100%;
+    height: 100%;
+    font-size: 21px;
+    margin-top: 100px;
+    color: #fff;
+    background-color: #e8820e;
+}
+.servicesbut{
+    width: 150px;
+    height: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #31603D;
+}
+button{
+    display: inline-block;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    transform: scale(1.1);
+    animation: pulse 0.5s ease-in-out;
+      box-shadow: 0px 4px 15px rgba(0, 100, 255, 0.1);
+    color: #e8820e;
+    font-weight: bold;
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 100, 255, 0.1);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.processbg{
+    background: linear-gradient(to bottom, #6ffb6d, #fffff8, #ffc664, #ffa100);
+    position: relative;
+    border-radius: 10px;
+    top: -150px;
+}
+.service-header h2{
+    font-family: "SitkaCustom", serif;
+      font-style: normal;
+      font-size: 35px;
+    margin-left: 35px;
+    color: #096861;
+    margin-bottom: 10px;
+}
+.service-header p{
+    font-family: "SitkaCustom", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.service-box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            background: linear-gradient(to bottom, white, #b5ffb4);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .text-box ul{
+            color: black;
+            margin-left: 20px;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+        }
+        .text-box p{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .slideshow-box {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .slideshow-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        /* Slideshow animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+
+        .slideshow-box img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-box img:nth-child(2) { animation-delay: 4s; }
+        .slideshow-box img:nth-child(3) { animation-delay: 8s; }
+
+.service-box5 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            background: linear-gradient(to top, #005760, whitesmoke);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .text-box5 {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .text-box5 ul{
+            color: white;
+            margin-left: 20px;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+        }
+
+        .slideshow-box5 {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .slideshow-box5 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        /* Slideshow animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+
+        .slideshow-box5 img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-box5 img:nth-child(2) { animation-delay: 4s; }
+        .slideshow-box5 img:nth-child(3) { animation-delay: 8s; }
+
+.service-box1 {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 98%;
+            background: linear-gradient(to top, whitesmoke, #ffe8b4);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .text-box1 {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .slideshow-box1 {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .text-box1 ul{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .text-box1 p{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .slideshow-box1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        /* Slideshow animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+
+        .slideshow-box1 img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-box1 img:nth-child(2) { animation-delay: 4s; }
+        .slideshow-box1 img:nth-child(3) { animation-delay: 8s; }
+
+.service-box2 {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 98%;
+            background: linear-gradient(to top, whitesmoke, #ffc033);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .text-box2 {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .text-box2 ul{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .text-box2 p{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .slideshow-box2 {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .slideshow-box2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        /* Slideshow animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+
+        .slideshow-box2 img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-box2 img:nth-child(2) { animation-delay: 4s; }
+        .slideshow-box2 img:nth-child(3) { animation-delay: 8s; }
+
+.service-box3 {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 98%;
+            background: linear-gradient(to top, white, #dcffc9);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .text-box3 {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .slideshow-box3 {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .text-box3 ul{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .text-box3 p{
+            color: black;
+            font-family: "SitkaCustom", serif;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .slideshow-box3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 12s infinite;
+        }
+
+        /* Slideshow animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+
+        .slideshow-box3 img:nth-child(1) { animation-delay: 0s; }
+        .slideshow-box3 img:nth-child(2) { animation-delay: 4s; }
+        .slideshow-box3 img:nth-child(3) { animation-delay: 8s; }
+
+.projectsbg{
+    background-color: #00a86b;
+}
+    .icon:before{
+        font-family:"ip";
+        font-style:normal;
+        font-weight:400;
+    }
+    .icon_menu:before{
+        content:"\e801"
+    }
+    .icon_menu.is-closed:before{
+        content:"\e809"
+    }
+    .icon_spoiler.is-opened:before{
+        content:"\e803"
+    }
+    .icon_spoiler.is-closed:before{
+        content:"\e802"
+    }
+            .icon_mail:before{
+                content:"\e800"
+            }
+                .icon_location:before{
+                    content:"\e806"
+                }
+                    .icon_ql:before{
+                        content:"\e804"
+                    }
+                    .icon_qr:before{content:"\e805"
+                    }
+                    .icon_link:before{
+                        content:"\e819"
+                    }
+                    .icon_phone:before{
+                        content:"\e81a"
+                    }
+                    .main-header{
+                        position:fixed;z-index:100;width:100%
+                    }
+                    .first-nav{
+                        position:absolute;
+                        z-index:200;
+                        top:0;
+                        left:0;
+                        height:40px;
+                        overflow:hidden;
+                        background-color: green;
+                        width:100%;
+                        margin:0 0;
+                        clear:both
+                    }
+                    .first-nav:before,.first-nav:after{
+                        display:block;
+                        content:'';
+                        clear:both;
+                        height:0
+                    }
+                    .first-nav__links{
+                        float:left;
+                        width:73%;
+                        width:calc(75% - 40px);
+                        margin-left:1%;
+                        margin-right:1%;
+                        margin-left:calc(20px);
+                        margin-right:calc(20px);
+                        height:auto;margin-top:0;
+                        margin-bottom:0
+                    }
+                    .first-nav__links li{
+                        display:inline-block;
+                        margin:0 10px
+                    }
+                    .first-nav__links a{
+                        color:#fff;
+                        font-family: "SitkaCustom", serif;
+                        font-style:italic;
+                        font-size: 16px;
+                        line-height:40px;
+                        border-color:#fff;
+                        -webkit-transition:color .5s;
+                        -o-transition:color .5s;
+                        transition:color .5s
+                    }
+                    .first-nav__links a.is-selected,.first-nav__links a:hover{
+                        color:#fff;border:0
+                    }
+                    .first-nav__navcontrol{
+                        display:none;
+                        float:left;
+                        width:23%;
+                        width:calc(25% - 40px);
+                        margin-left:1%;
+                        margin-right:1%;
+                        margin-left:calc(20px);
+                        margin-right:calc(20px);
+                        height:auto;
+                        margin-top:0;
+                        margin-bottom:0;
+                        color:#fff;
+                        line-height:40px;
+                        text-align:right;
+                        border:0;
+                        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+                    }
+                    .first-nav__navcontrol:before{
+                        display:inline-block;
+                        margin-right:10px;
+                        color:#fff;
+                        font-size:20px;
+                        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+                    }
+                    .first-nav__navcontrol.is-open,.first-nav__navcontrol.is-closed{
+                        display:block
+                    }
+                    .first-nav__navcontrol:hover,.first-nav__navcontrol:hover:before{
+                        color:#111
+                    }
+                    .second-nav{
+                        position:relative;
+                        min-height:80px;
+                        background-color:transparent;
+                        width:100%;
+                        margin:0 0;
+                        clear:both;
+                        margin-top:40px;
+                        border: 0;
+                        -webkit-transform:translateY(0);
+                        -ms-transform:translateY(0);
+                        transform:translateY(0);
+                        -webkit-transition:all .5s;
+                        -o-transition:all .5s;
+                        transition:all .5s
+                    }
+                    .second-nav:before,.second-nav:after{
+                        display:block;
+                        content:'';
+                        clear:both;
+                        height:0
+                    }
+                    .second-nav.is-closed{
+                        -webkit-transform:translateY(-100%);
+                        -ms-transform:translateY(-100%);transform:translateY(-100%)
+                    }
+                    .second-nav__logo{
+                        display:block;
+                        position:absolute;
+                        top:0;
+                        bottom:0;
+                        left:5px;
+                    }
+                    .second-nav__logo img{
+                        width: 100px;
+                        margin-top: 45px;
+                        margin-left: 25px;
+                    }
+        .second-nav a{
+            margin-right: 30px;
+        }
+        .menu{
+            float:right;
+            width:81%;
+            height: auto;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:0;
+            margin-bottom:0;
+            text-align:right;
+            padding-left:80px;
+            background-color:#55d174;
+        }
+    .menu ul{
+        padding-top:15px;
+        padding-bottom:20px
+    }
+    .menu li{
+        display:inline-block;
+        margin-left:10px
+    }
+    .menu li a{
+        line-height:25px;
+        color: white;
+        font-size:18px;
+        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+    }
+    .menu li a.is-selected,.menu li a:hover{
+        color:#aaa;border:0
+    }
+    .home-section{
+        position:relative;
+        width:100%;
+        overflow:hidden
+    }
+    .home-section:after{
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:0;
+        display:block;
+        width:100%;
+        height:0;
+        clear:both;
+        -webkit-box-shadow:0 0 2px 1px #111;
+        box-shadow:0 0 2px 1px #111
+    }
+    .home-section__bg{
+        position:absolute;
+        min-width:100%;
+        min-height:100%;
+        z-index:0;
+        background:url("{% static 'images/homebg.png' %}") center 0 no-repeat;
+        background-attachment:fixed;
+        background-size:cover;
+    }
+    .home-section__overlay{
+        position:relative;
+        width:100%;
+        height:100%;
+        min-height:100%;
+        background-color:transparent;
+        background-color:rgba(17,17,17,.3);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+        zoom:1;
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAZSURBVHjaYmCAAGM0GjfHGEMGAAAA//8DACm0ATMe8beGAAAAAElFTkSuQmCC);
+        background-repeat:repeat;
+        background-attachment:fixed
+    }
+    .home-section__header{
+        padding:200px 10px 400px;
+        text-align:center
+    }
+    .home-section__header h1{
+        margin-bottom:10px;
+        font-size:80px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight:700;
+        color:#fff;
+        text-shadow:1px 1px 1px #111
+    }
+    .home-section__header h2{
+        color:#fff
+    }
+    .home-section__header h3{
+        color: white;
+        margin-top: 40px;
+        font-family: "SitkaCustom", serif;
+
+    }
+    .home-section__header-label{
+        font-family:"SitkaCustom", serif;
+        font-size:40px;
+        color:#fff
+    }
+    .about-section{
+        position:relative;
+        margin-top:-200px
+    }
+    .about-section__card{
+        -webkit-box-shadow:2px 2px 4px -2px #111;
+        box-shadow:2px 2px 4px -2px #111;
+        float:left;
+        width:98%;
+        width:calc(100% - 40px);
+        margin-left:1%;
+        margin-right:1%;
+        margin-left:calc(20px);
+        margin-right:calc(20px);
+        height:auto;
+        margin-top:0;
+        margin-bottom:0
+    }
+    .about-section__card-header{
+        padding:20px;
+        background-color:#02c952;
+    }
+    .about-section__card-header h2{
+        color: white;
+        font-family: "SitkaCustom", serif;;
+    }
+
+    .about-section__card-header h4{
+        color:#fff;
+        font-family: "SitkaCustom", serif;
+    }
+    .about-section__card-info{
+        padding:20px;
+        background-color:#fff
+    }
+    .about-section__card-info ul li{
+        margin-left: 20px;
+        font-family: "SitkaCustom", serif;
+        font-size: 20px;
+    }
+    .about-section__card-info p{
+        line-height: 25px;
+        font-size: 20px;
+        font-family: "SitkaCustom", serif;;
+    }
+    .about-section__card-info p::first-letter{
+            font-size: 2em; /* Makes the first letter twice as big */
+            font-weight: bold;
+        }
+        .about-section__card-info h6{
+        line-height: 25px;
+        font-size: 20px;
+        font-family: "SitkaCustom", serif;;
+    }
+    .about-section__card-info blockquote p{
+        margin:20px 0 20px 20px;
+        font-family:"SitkaCustom", serif;
+        font-style:italic;
+        font-size: 20px;
+    }
+    .about-section__card-info .about-section__card-info-status{
+        margin-top:20px;
+        padding-top:10px;
+        border-top:1px dashed #aaa
+    }
+    .about-section__card-info .about-section__card-info-status span{
+        text-transform:uppercase;
+        font-family:"SitkaCustom", serif;
+        font-size: 20px;
+    }
+    .why__us{
+        margin-left: 10px;
+    }
+    .why__us .service-box4 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 98%;
+            background-color: floralwhite;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-top: 40px;
+        }
+
+        .why__us .text-box4 {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .why__us .slideshow-box4 {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why__us .slideshow-box4 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .why__us .text-box4 h4{
+            color: #f3962b;
+            font-family: "SitkaCustom", serif;
+            font-weight: 600;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .why__us .text-box4 p{
+            color: black;
+            font-family: "SitkaCustom", serif;
+              font-optical-sizing: auto;
+              font-size: 18px;
+              font-weight: 350;
+              line-height: 26px;
+              font-style: normal;
+        }
+        .why__us .text-box4 p::first-letter{
+            font-size: 2em; /* Makes the first letter twice as big */
+            font-weight: bold;
+        }
+        .why__us .text-box4 ul{
+            color: black;
+            font-family: "SitkaCustom", serif;
+              font-optical-sizing: auto;
+              font-weight: 350;
+              line-height: 26px;
+              font-size: 18px;
+              font-style: normal;
+              margin-left: 20px;
+        }
+    .mvission{
+        margin-left: 10px;
+    }
+    .mvission .boxx{
+    display: inline-block;
+    align-items: center;
+    padding: 10px 10px;
+    padding-left: 20px;
+    width: 98%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.2);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.mvission .boxx h4{
+    font-size: 34px;
+    color: #096861;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.mvission .boxx p{
+    font-size: 18px;
+    color: black;
+    line-height: 28px;
+}
+.servicesbg{
+    position: relative;
+    border-radius: 10px;
+    top: -60px;
+    background: linear-gradient(to top, #6ffb6d, whitesmoke);
+}
+.Service{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 3%;
+}
+.Service .boxx{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    height: 100%;
+    border: solid green 1px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+.Service .boxx i{
+    font-size: 30px;
+    color: #EE9A4D;
+    margin-bottom: 10px;
+    align-content: center;
+}
+.Service .boxx img{
+    min-width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.Service .boxx h4{
+    font-size: 20px;
+    color: #FFAE42;
+    text-align: center;
+    margin-bottom: 20;
+    letter-spacing: 1px;
+}
+.Service .boxx p{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+    .margn{
+        margin-top: 20px;
+    }
+    .common-section{
+        position:relative;
+        height: 100%;
+        min-width:100%;
+        min-height:100%;
+        z-index:0;
+    }
+    .contacts-section{
+        position:relative;
+        padding-top:200px;
+    }
+    .contact-card{
+        position:absolute;
+        top:-330px;
+        z-index:50;
+        -webkit-box-shadow:2px 2px 4px -2px #111;
+        box-shadow:2px 2px 4px -2px #111;
+        float:left;
+        width:98%;
+        width:calc(100% - 40px);
+        margin-left:1%;
+        margin-right:1%;
+        margin-left:calc(20px);
+        margin-right:calc(20px);
+        height:auto;
+        margin-top:0;
+        margin-bottom:0
+    }
+    .contact-card__header{
+        padding:20px;
+        background-color:#0cb44a;
+    }
+    .contact-card__header h2,.contact-card__header h4{
+        color:#fff
+    }
+    .contact-info{
+        position:relative;
+        min-height:300px;
+        padding:20px 60px 20px 20px;
+        background-color:#fff;
+        overflow:hidden;
+        white-space:nowrap
+    }
+    .contact-info__logo{
+        display:inline-block;
+        color:#47c8bf;
+        font-size:80px;
+        line-height:60px;
+        letter-spacing:-5px;
+        font-family:"SitkaCustom", serif;
+        font-weight:700;
+        text-align:center;
+        border:0;
+        vertical-align:top
+    }
+    .contact-info__group{
+        display:inline-block;
+        padding-left:20px;
+        white-space:normal;
+        vertical-align:top
+    }
+    .contact-info__additional{
+        margin-bottom:20px
+    }
+    .contact-info__additional p{
+        font-style:italic;
+        font-family:"SitkaCustom", serif;
+        line-height:1.5
+    }
+    .contact-info__vcard h4{
+        margin-bottom:10px;
+        font-weight:700
+    }
+    .contact-info__vcard p{
+        margin-bottom:10px
+    }
+    .contact-info__vcard p:before{
+        float:left;
+        display:block;
+        width:25px;
+        height:25px;
+        border:0;
+        vertical-align:top
+    }
+    .contact-info__vcard a{
+        display:inline-block;
+        vertical-align:top
+    }
+    .contact-info__vcard span{
+        display:inline-block
+    }
+    .contact-info__social{
+        position:absolute;
+        width:40px;
+        height:100%;
+        top:0;
+        right:0;
+        list-style-type:none;
+        background-color:#aaa
+    }
+    .contact-info__social li{
+        display:block;
+        width:40px;
+        height:50px;
+        text-align:center;
+        overflow:hidden;
+        background-color:#aaa;
+        border-top:1px solid #fff
+    }
+    .contact-info__social li:hover{
+        background-color:transparent
+    }
+    .contact-info__social li a{
+        display:inline-block;
+        width:40px;
+        color:#fff;
+        font-size:0;
+        cursor:pointer;
+        border:0
+    }
+    .contact-info__social li a:before{
+        display:inline-block;
+        width:40px;
+        text-align:center;
+        font-size:25px;
+        line-height:50px;
+        color:#fff
+    }
+    .contact-info__social li a:hover:before{
+        color:#111
+    }
+    iframe{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    .footnote{
+            width:100%;
+            height: auto;
+            text-align: center;
+            font-weight: lighter;
+        }
+    .footnote ul{
+        padding-top:5px;
+        padding-bottom:5px
+    }
+    .footnote li{
+        display:inline-block;
+        margin-left:18px;
+        font-weight: lighter;
+    }
+    .footnote li a{
+        line-height:20px;
+        font-size:16px;
+        font-weight: lighter;
+        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+    }
+    .footnote li a.is-selected,.menu li a:hover{
+        color:#aaa;
+    }
+    .main-footer{
+        position:relative;
+        z-index:100;
+        width:103%;
+        overflow: hidden;
+        margin-left: 6px;
+        background-color:rgba(0, 0, 0, 0.4);
+        color:#fff;
+        -webkit-box-shadow:0 -2px 2px -1px #111;
+        box-shadow:0 -2px 2px -1px #111
+    }
+    .main-footer:before{
+        content:"";
+        position:absolute;
+        top:-30px;
+        left:50%;
+        margin-left:-40px;
+        border-bottom:40px;
+        border-left:40px solid transparent;
+        border-right:40px solid transparent
+    }
+    .main-footer a{
+        color:#fff;
+        border-color:#fff;
+        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+    }
+    .main-footer a:hover{
+        color:#111
+    }
+    .main-footer__copyright{
+        margin-left:10px;
+        padding-top:10px;
+        float:left;
+        line-height:40px;
+    }
+    .main-footer__links{
+        margin-right:10px;
+        padding-top:10px;
+        float:right;
+        line-height:40px
+    }
+    .main-footer__copyright,.main-footer__links{
+        font-weight:lighter
+    }
+    .main-footer__copyright span,.main-footer__copyright a,.main-footer__links span,.main-footer__links a{
+        font-weight:700
+    }
+    .main-footer__gotop{
+        position:absolute;
+        top:-20px;
+        left:50%;
+        z-index:200;
+        display:block;
+        width:36px;
+        height:36px;
+        font-size:0;
+        border:0;
+        overflow:hidden
+    }
+    .main-footer__gotop:before{
+        display:block;
+        font-size:60px;
+        line-height:40px;
+        color:#fff;
+        -webkit-transition:color .5s;-o-transition:color .5s;transition:color .5s
+    }
+    .main-footer__gotop:hover:before{
+        color:#111
+    }
+    @media screen and (max-width:1200px){
+        h1{
+            font-size:55px
+        }
+        h2{
+            font-size:35px
+        }
+        h3{
+            font-size:25px
+        }
+        h4{
+            font-size:18px
+        }
+        .common-section__header h3{
+                    font-size: 30px;
+                    }
+                    .common-section__header p{
+                    font-size: 20px;
+                    margin-left: 30px;
+                    }
+        .why__us .boxx p{
+    font-size: 17px;
+    line-height: 26px;
+}
+.why__us .boxx h4{
+    font-size: 17px;
+    line-height: 26px;
+}
+        .processx .boxx{
+        margin-left: 25px;
+        height: 100%;
+        width: 98%;
+        }
+    .processx .boxx p{
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    }
+        .home-section__header h1{
+            font-size:50px
+        }
+        .home-section__header-label{
+            font-size:25px
+        }
+    .Feedbackx .boxx{
+    width: 42%;
+    height: 100%;
+    margin-left: 50px;
+}
+.Feedbackx .boxx h4{
+    margin-left: 40%;
+    margin-bottom: 15px;
+    margin-top: 24%;
+}
+.Feedbackx .boxx h5{
+    margin-left: 40%;
+    margin-bottom: 15px;
+    margin-top: 28%;
+}}
+
+@media screen and (max-width:1200px){
+    .why__us .boxx p{
+    font-size: 16px;
+    line-height: 23px;
+}
+.why__us .boxx h4{
+    font-size: 18px;
+    line-height: 24px;
+}
+}
+
+        @media screen and (max-width:960px){
+            .menu li a{
+                line-height:20px;
+                font-size:15px;
+                margin-right: 10px;
+                }
+            .first-nav__links li{
+                margin:0 7px
+            }
+            .second-nav__logo img{
+                width: 100px;
+                margin-left: 5px;
+            }
+            .container{
+                margin-right: 10px;
+                margin-left: -3px;
+            }
+            .common-section__header h3{
+                    font-size: 30px;
+                    }
+                    .common-section__header p{
+                    font-size: 20px;
+                    }
+
+            .why__us{
+                margin-left: 10px;
+            }
+            .why__us .boxx p{
+    font-size: 14px;
+    line-height: 20px;
+}
+.why__us__overlay{
+        width:45%;
+        height:96%;
+    }
+    .mvission{
+                margin-left: 30px;
+            }
+.processx .boxx{
+    width: 98%;
+    height: 100%;
+    margin-left: 15px;
+    }
+.processx .boxx i{
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    .processx .boxx h4{
+    font-size: 25px;
+    margin-bottom: 20;
+    letter-spacing: 1px;
+    }
+    .processx .boxx p{
+    font-size: 19px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    }
+.Feedbackx .boxx{
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+}
+.Feedbackx .boxx h4{
+    margin-left: 25%;
+    margin-bottom: 15px;
+    margin-top: 13%;
+}
+.Feedbackx .boxx h5{
+    margin-left: 25%;
+    margin-bottom: 15px;
+    margin-top: 16%;
+}
+.resourcesx .boxx{
+    width: 60%;
+}}
+
+@media screen and (max-width:870px){
+    .why__us .boxx p{
+    font-size: 13px;
+    line-height: 18px;
+}}
+
+            @media screen and (max-width:800px){
+                .common-section{
+                    padding-top:50px
+                }
+                .common-section__header{
+                    padding-bottom:20px
+                }
+                .common-section__header h3{
+                    font-size: 30px;
+                    }
+                    .common-section__header p{
+                    font-size: 20px;
+                    }
+                h1{
+                    font-size:50px
+                }
+                h2
+                {
+                    font-size:30px
+                }
+                h3{
+                    font-size:20px
+                }
+                h5{
+                    font-size:16px
+                }
+                p{
+                    font-size:16px
+                }
+                .menu{
+                    padding-left: 30px;
+                }
+                .menu li a{
+                line-height:20px;
+                font-size:15px;
+                margin-right: 10px;
+                }
+                .home-section__header h1{
+                    font-size:50px
+                }
+                .home-section__header-label{
+                    font-size:25px
+                }
+.why__us .boxx h4{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.why__us .boxx p{
+    font-size: 17px;
+    line-height: 22px;
+}
+.why__us__overlay{
+        width:98%;
+        height:96%;
+    }
+    .mvission .boxx h4{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.mvission .boxx p{
+    font-size: 18px;
+    line-height: 28px;
+}
+    .processx .boxx{
+    width: 98%;
+    height: 100%;
+    margin-left: 20px;
+    }
+    .processx .boxx i{
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    .processx .boxx h4{
+    font-size: 24px;
+    margin-bottom: 20;
+    letter-spacing: 1px;
+    }
+    .processx .boxx p{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    }
+    .Feedbackx .boxx{
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+}
+.Feedbackx .boxx h4{
+    margin-left: 28%;
+    margin-bottom: 15px;
+    margin-top: 17%;
+}
+.Feedbackx .boxx h5{
+    margin-left: 28%;
+    margin-bottom: 15px;
+    margin-top: 20%;
+}
+.resources-section__header h1{
+    font-size: 35px;
+    margin-left: 30px;
+    margin-top: 5%;
+}
+                .contacts-section{
+                    padding-top:250px
+                }
+                .contact-info__logo{
+                    display:none
+                }
+                .contact-info__group{
+                    padding-left:0
+                }
+                .contact-info__additional{
+                    margin-left:0
+                }
+                .contact-info__vcard{
+                    margin-left:0
+                }}
+
+            @media screen and (max-width:760px){
+                .why__us .boxx h4{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.why__us .boxx p{
+    font-size: 14px;
+    line-height: 19px;
+}
+.resourcesx .boxx{
+    width: 70%;
+    margin-left: 15%;
+}
+.resourcesx .boxx p{
+    font-size: 15px;
+}}
+
+@media screen and (max-width:695px){
+.service-box5 {
+            background: linear-gradient(to top, #005760, whitesmoke);
+     }}
+
+                @media screen and (max-width:600px){
+                .menu{
+                padding-left:0;
+                text-align:center;
+                background-color:#2e4155;
+            }
+            .menu ul{
+                padding-top:0;
+                padding-bottom:0
+            }
+            .menu li{
+                margin:0 9px;
+                display:block;
+                margin:auto;
+            }
+            .menu li a{
+                font-size:18px;
+                line-height: 30px;
+            }
+            .first-nav__links a{
+                        font-size: 11px;
+                    }
+            .second-nav__logo img{
+                width: 58px;
+                margin-left: 5px;
+            }
+                    .first-nav__links{
+                        float:left;
+                        width:89.66667%;
+                        width:calc(91.66667% - 40px);
+                        margin-left:1%;
+                        margin-right:1%;
+                        margin-left:calc(20px);
+                        margin-right:calc(20px);
+                        height:auto;
+                        margin-top:0;
+                        margin-bottom:0
+                    }
+                    .first-nav__navcontrol{
+                        float:left;
+                        width:6.33333%;
+                        width:calc(8.33333% - 40px);
+                        margin-left:1%;
+                        margin-right:1%;
+                        margin-left:calc(20px);
+                        margin-right:calc(20px);
+                        height:auto;
+                        margin-top:0;
+                        margin-bottom:0;
+                        margin-left:0;
+                        font-size:0
+                    }
+                    .first-nav__navcontrol:before{
+                        margin-right:0
+                    }
+                    .home-section__header{
+                        padding:100px 0 300px
+                    }
+                    .home-section__header h3{
+                        margin-left: 15px;
+                        font-size: 24px;
+                    }
+                    .common-section__header h3{
+                    font-size: 30px;
+                    }
+                    .common-section__header p{
+                    font-size: 20px;
+                    }
+    .about-section__card-info p{
+        font-size: 16px;
+    }
+    .about-section__card-info ul li{
+        font-size: 16px;
+    }
+    .about-section__card-info h6{
+        font-size: 16px;
+    }
+    .mvission .boxx h4{
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.mvission .boxx p{
+    font-size: 15px;
+    line-height: 24px;
+}
+.Service .boxx{
+        width: 98%;
+    }
+    .Service .boxx i{
+    font-size: 20px;
+    color: #EE9A4D;
+    margin-bottom: 20px;
+    }
+    .Service .boxx h4{
+    font-size: 20px;
+    color: #FFAE42;
+    margin-bottom: 20;
+    letter-spacing: 1px;
+    }
+    .Service .boxx p{
+    font-size: 14px;
+    color: black;
+    line-height: 25px;
+    margin-bottom: 20px;
+    }
+    .service-box4 .text-box4 p{
+        font-size: 16px;
+    }
+    .service-box4 .text-box4 h4{
+        font-size: 24px;
+    }
+    .text-box4 ul li{
+        font-size: 16px;
+    }
+    .why__us .boxx h4{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.why__us .boxx p{
+    font-size: 12px;
+    line-height: 18px;
+}
+.why__us .boxx img{
+    min-width: 100px;
+    height: 260px;
+    margin-right: -5px;
+}
+.why__us__overlay{
+        width:96%;
+        height:94%;
+    }
+button{
+    width: 100px;
+    height: 100%;
+    padding: 8px 6px;
+    font-size: 14px;
+}
+    .processx .boxx{
+    display: inline-block;
+    align-items: center;
+    width: 96%;
+    height: 100%;
+    margin-left: 25px;
+    }
+    .processx .boxx img{
+    min-width: 100px;
+    height: 200px;
+    margin-right: 0px;
+}
+    .processx .boxx h4{
+    font-size: 20px;
+    margin-bottom: 20;
+    letter-spacing: 1px;
+    }
+    .processx .boxx p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    }
+.processbg{
+    margin-top: 40px;
+}
+.service-header p{
+    font-size: 16px;
+}
+.service-header h2{
+    font-size: 19px;
+}
+.text-box ul{
+    font-size: 16px;
+}
+.text-box1 ul{
+    font-size: 16px;
+}
+.text-box2 ul{
+    font-size: 16px;
+}
+.text-box3 ul{
+    font-size: 16px;
+}
+.common-section__header p{
+    font-size: 18px;
+}
+.Feedbackx .boxx{
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+}
+.Feedbackx .boxx h4{
+    margin-left: 24%;
+    margin-bottom: 15px;
+    margin-top: 15%;
+}
+.Feedbackx .boxx h5{
+    margin-left: 24%;
+    margin-bottom: 15px;
+    margin-top: 19%;
+}
+.Feedbackx h3{
+    font-size: 22px;
+}
+.Feedback_header h3{
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .Feedbackx .boxx img{
+    min-width: 50px;
+    height: 50px;
+}
+                    .main-footer__copyright{
+                        padding-top:20px;
+                        line-height:1
+                    }
+                    .main-footer__links{
+                        padding-top:0
+                    }
+                    .main-footer__copyright,.main-footer__links{
+                        float:none;
+                        text-align:center
+                    }}
+
+@media screen and (max-width:520px){
+
+.home-section__header{
+    padding:130px 0 300px;
+}
+.home-section__header h2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.service-header h2{
+    font-size: 30px;
+}
+    .Feedbackx .boxx{
+    width: 90%;
+    height: 100%;
+    margin-left: 20px;
+}
+.Feedbackx .boxx h4{
+    margin-left: 27%;
+    margin-bottom: 15px;
+    margin-top: 19%;
+}
+.Feedbackx .boxx h5{
+    margin-left: 27%;
+    margin-bottom: 15px;
+    margin-top: 24%;
+}
+.resourcesx .boxx{
+    width: 90%;
+    margin-left: 8%;
+}
+.resourcesx .boxx h4{
+    font-size: 25px;
+}
+.resourcesx .boxx p{
+    font-size: 14px;
+}
+.resources-section__header h1{
+    font-size: 28px;
+}}
+
+@media screen and (max-width:500px){
+.Feedbackx .boxx h4{
+    margin-left: 32%;
+    margin-bottom: 15px;
+    margin-top: 25%;
+}
+.Feedbackx .boxx h5{
+    margin-left:32%;
+    margin-bottom: 15px;
+    margin-top: 30%;
+}
+.Feedbackx .boxx p{
+    font-size: 13px;
+}}
+    </style>
+    <script src="{% static 'js/head.min.js' %}">
+    </script>
+</head>
+<body>
+<!-- Header-->
+<header class="main-header">
+    <div class="first-nav">
+        <div class="container">
+            <nav class="first-nav__links">
+                <ul>
+                    <li>
+                        <a class="is-selected">0721 479 166 | support@trinityverd.co.ke</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+        </div>
+    </div>
+    <div class="second-nav js-nav">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="js-link js-anchor" href="{% url 'login' %}">Login</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor is-selected" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#about">About us</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#why_us">Why Choose us</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#process">Services</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#services">Process</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#contacts">Contacts </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Home section-->
+<section class="home-section" id="home">
+    <div class="home-section__bg">
+    </div>
+    <div class="home-section__overlay">
+        <div class="second-nav__logo">
+            <img src="{% static 'images/logo.png' %}" alt="Sample Image" class="image-left">
+        </div>
+        <div class="container">
+            <div class="homemarg">
+                <header class="home-section__header">
+                    <p class="home-section__header-label"></p>
+                    <h1>TRINITY VERD</h1>
+                    <h2>A key player in the agricultural produce industry, providing sustainable solutions that benefit
+                        both people and the planet.</h2>
+                    <div class="dropdown">
+                        <button class="homebut" onclick="location.href='#process'">OUR SERVICES</button>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About section-->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-section__card">
+            <header class="about-section__card-header">
+                <h2><b>About US</b></h2>
+                <h4>Trinity Verd.</h4>
+            </header>
+            <div class="about-section__card-info">
+                <p>At <b>Trinity Verd,</b> we are passionate about harnessing the power of nature <b>to deliver
+                    high-quality</b> agricultural products that make a difference. Specializing in <b>castor oil
+                    plants,</b> we are committed to sustainability, innovation, and excellence in every step of our
+                    operations. </br>Working closely with local farmers and partners, we ensure <b>ethical farming
+                        practices</b> and empower communities while <b>preserving the environment.</b> We take pride in
+                    fostering <b>strong relationships</b> with local farmers, empowering them with the knowledge and
+                    resources to farm responsibly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vission section-->
+<div class="container" id="why_us">
+    <div class="why__us">
+        <div class="service-box4">
+            <div class="text-box4">
+                <h4><b>Why Choose Us</b></h4>
+                <p>At <b>Trinity Verd,</b> we are commited to transforming castor farming into a <b>profitable and
+                    sustainable venture</b> for farmers. With us, you don't get just a buyer- you get a <b>commited
+                    partner</b> with you every step of the way. We ensure you have the <b>resources, knowledge and
+                    support</b> needed to succeed. </br></br> <b>Here is more reasons why you should work with
+                    us:</b></br>
+                    1. <b>Guaranteed Market</b> for your harvest.</br>
+                    2. <b>High-breed planting seeds</b> for maximum yield even with small rainfall.</br>
+                    3. <b>Expert training</b> on proper farming techniques & <b>continous support.</b></br>
+                    4. <b>Risk reduction</b> & sustainable farming.</br>
+                    5. Empowering farmers for economic growth.
+                </p>
+            </div>
+            <div class="slideshow-box4">
+                <img src="{% static 'images/partner.jpg' %}" alt="Photo 1">
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission & Vission section-->
+    <div class="container">
+        <div class="mvission">
+            <div class="boxx">
+                <h4>MISSION</h4>
+                <p>To facilitate the world's progress towards green sustainable energy.</p>
+            </div>
+            <div class="boxx">
+                <h4>VISSION</h4>
+                <p>To be one of the top players in the agriculture and energy sector in Kenya and the world. We aim to
+                    reach out to as many farmers as possible by 2030. To save the planet at the benefit of farmers.</p>
+            </div>
+        </div>
+
+
+        <!-- Services session-->
+        <section class="common-section" id="process">
+            <div class="servicesbg">
+                <div class="container">
+                    <div class="common-section__header">
+                        <h3><b>Our Services</b></h3>
+                        <p>Our <b>roles</b> in the castor value chain</p>
+                        <div class="Service">
+                            <div class="boxx" data-aos="fade-up">
+                                <i><img src="{% static 'images/manage.png' %}"></i>
+                                <h4><b>Managing castor value chain</b></h4>
+                                <p><b>We manage</b> the castor value chain in 2 counties; <b>Kitui(Kitui West, Kitui
+                                    East, Kitui Rural, Mwingi North & Mwingi Central) and Makueni(Mbooni West).</b> We
+                                    are involved with recruiting farmers interested in planting castor, <b>proper
+                                        training of our farmers</b> to ensure they plant accordingly and purchase of the
+                                    produce.</p>
+                                <div class="dropdown">
+                                    <button class="servicesbut" onclick="location.href='#services'">Learn More</button>
+                                </div>
+                            </div>
+
+                            <div class="boxx" data-aos="fade-down">
+                                <i><img src="{% static 'images/partner1.png' %}"></i>
+                                <h4><b>Partnership with Farmers</b></h4>
+                                <p>We <b>partner with farmers</b> from the <b>arid and semi-arid areas</b> of Kenya to
+                                    promote sustainable agricultural practices. Our partnership with the farmers is <b>sealed
+                                        by a contract</b> dictating we are obligated to purchase the produce once
+                                    harvested. We have partnerd with <b>over 13,000 farmers</b> across Kitui and
+                                    Makueni. We train our farmers on proper <b>castor planting techniques</b> and guide
+                                    them through to harvest.</p>
+                            </div>
+                            <div class="boxx" data-aos="zoom-in">
+                                <i><img src="{% static 'images/evaluation.png' %}"></i>
+                                <h4><b>Monitoring and Evaluation</b></h4>
+                                <p>We <b>monitor the plant</b> from planting period to harvesting period. We <b>visit
+                                    the farms</b> and check on the <b>germination rate, progress and general health</b>
+                                    of the plant and give hindsights to the farmer where neccessary. During this phase
+                                    we watch more on <b>crop environment and pests & diseases control.</b> In the cases
+                                    where pest and diseases are noticed, we <b>issue</b> the farmers with the <b>appropriate
+                                        pesticides.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Process section-->
+        <section class="common-section" id="services">
+            <div class="processbg">
+                <div class="container">
+                    <header class="common-section__header">
+                        <h3><b>Our Farming Process</b></h3>
+                        <p>How we do our farming</p>
+                    </header>
+                    <div class="service-header">
+                        <h2><b>Farmer Recruitment</b></h2>
+                    </div>
+                    <div class="service-box" data-aos="fade-up">
+                        <div class="text-box">
+                            <p>During this phase we partner with <b>local administrations</b> and organize
+                                <b>Barazas</b> where we educate the locals about castor and <b>recruit interested
+                                    farmers.</b> We record the details of the farmers and stay in constant communication
+                                with them.</p>
+                        </div>
+                        <div class="slideshow-box">
+                            <img src="{% static 'images/recru1.jpg' %}" alt="Photo 1">
+                            <img src="{% static 'images/recru2.jpg' %}" alt="Photo 2">
+                            <img src="{% static 'images/recru1.jpg' %}" alt="Photo 3">
+                        </div>
+                    </div>
+                    <div class="service-header">
+                        <h2><b>Seed Distribution.</b></h2>
+                    </div>
+                    <div class="service-box1" data-aos="fade-up">
+                        <div class="text-box1">
+                            <p>During the <b>seed distribution phase,</b> we distribute <b>hybrid planting seeds</b> to
+                                farmers as we continue to educate them on proper castor <b>farming techniques.</b> More
+                                farmers are also recruited during this phase.</p>
+                        </div>
+                        <div class="slideshow-box1">
+                            <img src="{% static 'images/seed1.jpg' %}" alt="Photo 1">
+                            <img src="{% static 'images/seed2.jpg' %}" alt="Photo 2">
+                            <img src="{% static 'images/seed1.jpg' %}" alt="Photo 3">
+                        </div>
+                    </div>
+                    <div class="service-header">
+                        <h2><b>Mapping</b></h2>
+                    </div>
+                    <div class="service-box2" data-aos="fade-up">
+                        <div class="text-box2">
+                            <p>During this phase, <b>we map the planted acres</b> as we <b>monitor</b> and
+                                <b>evaluate</b> the germination rate and the <b>overall health</b> of the crop. We offer
+                                hindsights to farmers where neccesary like when weeding is needed.</p>
+                        </div>
+                        <div class="slideshow-box2">
+                            <img src="{% static 'images/evmon1.jpg' %}" alt="Photo 1">
+                            <img src="{% static 'images/evmon2.jpg' %}" alt="Photo 2">
+                            <img src="{% static 'images/farmer.jpg' %}" alt="Photo 3">
+                        </div>
+                    </div>
+                    <div class="service-header">
+                        <h2><b>Harvest and Purchase</b></h2>
+                    </div>
+                    <div class="service-box3" data-aos="fade-up">
+                        <div class="text-box3">
+                            <p>At the end of the planting season is the harvest. <b>We educate</b> our farmers on <b>proper
+                                harvest and storage techniques</b> in order to avoid post-harvest losses. </br> After
+                                the farmer harvests the castor, <b>we purchase it at competitive prices</b> in both
+                                clean and panicle states. We also have <b>decorticators in circulation</b> which help
+                                the farmers thresh the castor more effectively.</p>
+                        </div>
+                        <div class="slideshow-box3">
+                            <img src="{% static 'images/thresher2.jpg' %}" alt="Photo 1">
+                            <img src="{% static 'images/purchase1.jpg' %}" alt="Photo 2">
+                            <img src="{% static 'images/harvest1.jpg' %}" alt="Photo 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts section-->
+        <div class="contacts-section" id="contacts">
+            <div class="container">
+                <section class="contact-card">
+                    <header class="contact-card__header">
+                        <h2><b>Our Contacts</b></h2>
+                        <h4>You can reach us through:</h4>
+                    </header>
+                    <div class="contact-info">
+                        <div class="contact-info__logo">
+                            <img src="{% static 'images/logo.png' %}" alt="Sample Image" class="image-left" width="150">
+                        </div>
+                        <div class="contact-info__group">
+                            <div class="contact-info__additional">
+                                <p>Having trouble or query?</p>
+                                <p>Call or Email us via the details below.</p>
+                                <p>Or come visit us.</p>
+                            </div>
+                            <div class="contact-info__vcard vcard">
+                                <h4 class="fn org">Trinity Verd</h4>
+                                <p class="role title"></p>
+                                <p class="icon icon_location">
+                                    <a class="adr js-anchor" href="https://maps.app.goo.gl/t1SgRbD9Sf6XAKpf9"
+                                       target="_blank">
+                                        <span class="country-name">Sartaj Building: 5th Floor</span>,&nbsp;
+                                        <span class="locality">Machakos</span>,&nbsp;
+                                        <span class="address">Kenya</span></a>
+                                </p>
+                                <p class="icon icon_mail">
+                                    <a class="email"
+                                       href="mailto:support@trinityverd.co.ke">support@trinityverd.co.ke</a>
+                                </p>
+                                <p class="icon icon_phone">
+                                    <a class="email" href="tel:+254 721 479 166">0721 479 166</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4209810172515!2d37.261249010153506!3d-1.5164380984629569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f80d1f524353b%3A0xe2905cda8ac3364c!2sSartaj%20Shopping%20Mall!5e0!3m2!1sen!2ske!4v1740288465395!5m2!1sen!2ske"
+                    width="99%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Footer-->
+        <footer class="main-footer">
+            <div class="container">
+                <nav class="footnote">
+                    <ul>
+                        <li>
+                            <a class="js-link js-anchor is-selected" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="js-link js-anchor" href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a class="js-link js-anchor" href="#why_us">Why Choose us</a>
+                        </li>
+                        <li>
+                            <a class="js-link js-anchor" href="#services">Process</a>
+                        </li>
+                        <li>
+                            <a class="js-link js-anchor" href="#process">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="main-footer__copyright">&copy;&nbsp;
+                    <span>Trinity Verd LTD</span>
+                </p>
+                <p class="main-footer__links">2025&nbsp;</p>
+            </div>
+        </footer>
+        <script src="{% static 'js/body.min.js' %}">
+        </script>
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            // Initialize AOS
+            AOS.init({
+                duration: 1000, // Animation duration (default is 400ms)
+                once: true, // Animation runs only once
+            });
+        </script>
+</body>
+</html>
