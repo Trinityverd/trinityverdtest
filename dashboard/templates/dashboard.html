@@ -193,18 +193,18 @@
     </div>
     {% if user.userprofile.role == "Field Officer" %}
     <ul id="navLinks" class="nav-links">
-        <li><button><a href="{% url 'recruitment' %}">Add Farmer</a></button></li>
-        <li><button><a href="{% url 'seed_distri' %}">Seed Distribution</a></button></li>
-        <li><button><a href="{% url 'purchases' %}">Add Purchase</a></button></li>
-        <li><button><a href="{% url 'logout' %}">Log Out</a></button></li>        
+        <li><button onclick="location.href='{% url 'recruitment' %}'">Add Farmer</button></li>
+        <li><button onclick="location.href='{% url 'seed_distri' %}'">Seed Distribution</button></li>
+        <li><button onclick="location.href='{% url 'purchases' %}'">Add Purchase<button></li>
+        <li><button onclick="location.href='{% url 'logout' %}'">Log Out</button></li>           
     </ul>
     {% endif %}
     {% if user.userprofile.role != "Field Officer" %}
     <ul id="navLinks" class="nav-links">
-        <li><button><a href="{% url 'recruited_farmers' %}">View Farmers</a></button></li>
-        <li><button><a href="{% url 'seed_distributed' %}">Seed Distributed</a></button></li>
-        <li><button><a href="{% url 'purchased' %}">View Purchases</a></button></li>
-        <li><button><a href="{% url 'logout' %}">Log Out</a></button></li>
+        <li><button onclick="location.href='{% url 'recruited_farmers' %}'">View Farmers</button></li>
+        <li><button onclick="location.href='{% url 'seed_distributed' %}'">Seed Distributed</button></li>
+        <li><button onclick="location.href='{% url 'purchased' %}'">View Purchases</button></li>
+        <li><button onclick="location.href='{% url 'logout' %}'">Log Out</button></li>
     </ul>
     {% endif %}
     </div>
