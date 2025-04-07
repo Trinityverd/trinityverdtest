@@ -920,7 +920,7 @@ footer {
 		box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.3);
 	}
 	.nav-links.active button:hover {
-		background: #a52a2a;
+		background: #ff6f00;
 	}
 	.home-section__header h1 {
 		font-size: 60px;
