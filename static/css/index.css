@@ -84,7 +84,7 @@ main {
 	position: relative;
 }
 .home-section {
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	overflow: hidden;
 }
@@ -140,7 +140,7 @@ main {
     color:#fff
 }
 .home-btn {
-	padding:370px 10px;
+	padding:390px 10px;
     text-align:center;
 }
 .home-btn button {
@@ -173,7 +173,7 @@ button:focus {
 }
 
 .about-section{
-  	margin-top: -130px;
+  	margin-top: -330px;
 }
 .about-section__card{
     -webkit-box-shadow:2px 2px 4px -2px #111;
