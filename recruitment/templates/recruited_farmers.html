@@ -77,11 +77,11 @@
     </div>
     <ul id="navLinks" class="nav-links">
         {% if user.userprofile.role == "Field Officer" %}
-        <li><button><a href="{% url 'recruitment' %}">Add Farmer</a></button></li>
+        <li><button onclick="location.href='{% url 'recruitment' %}'">Add Farmer</button></li>
         {% endif %}
-        <li><button><a href="{% url 'dashboard' %}">Dashboard</a></button></li>
-        <li><button><a href="{% url 'export_farmers' %}">Export Farmers</a></button></li>
-        <li><button><a href="{% url 'logout' %}">Log Out</a></button></li>
+        <li><button onclick="location.href='{% url 'dashboard' %}'">Dashboard</button></li>
+        <li><button onclick="location.href='{% url 'export_farmers' %}'">Export Farmers</button></li>
+        <li><button onclick="location.href='{% url 'logout' %}'">Log Out</button></li>
     </ul>
     </div>
 </header>
