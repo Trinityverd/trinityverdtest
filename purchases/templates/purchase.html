@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Purchase | Trinity Verd</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arapey:ital@0;1&family=Baskervville+SC&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <style type="text/css">
+        .purchase-section1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 450px;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            position: absolute;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 340px;
+            height: auto;
+            max-width: 400px;
+            text-align: center;
+        }
+        .form-container h1{
+            font-family:"Montserrat", sans-serif;
+            color: #ff6f00;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: bold;
+            font-family:"Montserrat", sans-serif;
+            color: #333333;
+        }
+        input textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            border-color: #4caf50 !important;
+            outline: none;
+        }
+        input {
+            border: 1px solid #333333 !important;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .errorlist {
+            color: red;
+            font-size: 14px;
+            font-weight: lighter;
+            list-style-type: none;
+            margin: 4px 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Header-->
+<header class="nav-menu sticky">
+    <h2>TRINITY VERD</h2>
+    <div id="menuIcon" class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul id="navLinks" class="nav-links">
+        <li><button><a href="{% url 'dashboard' %}">Dashboard</a></button></li>
+        <li><button><a href="{% url 'logout' %}">Log Out</a></button></li>
+    </ul>
+</header>
+
+<!-- Home section-->
+<section class="purchase-section1" id="home">
+    <div class="form-container">
+    <h1>PURCHASE</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    </div>
+</section>
+
+<script defer src="{% static 'js/script.js' %}"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000, // Animation duration (default is 400ms)
+        once: true, // Animation runs only once
+    });
+</script>
+</body>
+</html>

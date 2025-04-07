@@ -1,0 +1,311 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Trinity Verd</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arapey:ital@0;1&family=Baskervville+SC&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <header class="nav-menu sticky">
+        <h2>TRINITY VERD</h2>
+        <div id="menuIcon" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="navLinks" class="nav-links">
+            <li><button><a href="{% url 'login' %}">Login</a></button></li>
+            <li><button><a href="#home">Home</a></button></li>
+            <li><button><a href="#process">Services</a></button></li>
+            <li><button><a href="#services">Process</a></button></li>
+            <li><button><a href="#contacts">Contacts</a></button></li>
+        </ul>
+        </div>
+  </header>
+  <main>
+<!-- Home section-->
+<section class="home-section" id="home">
+    <div class="home-section_bg">
+        <img src="{% static 'images/homebg.png' %}" alt="Home BG">
+        <div class="home-section__overlay">
+            <div class="homemarg">
+                <div class="home-section__header">
+                    <p class="home-section__header-label"></p>
+                    <h1>TRINITY VERD</h1>
+                    <h2>A key player in the agricultural produce industry, providing sustainable solutions that benefit
+                        both people and the planet.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="home-btn">
+            <button onclick="location.href='#process'"> Our Services</button>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- About section-->
+<section class="about-section" id="about">
+    <div class="about-section__card">
+        <header class="about-section__card-header">
+            <h2><b>About US</b></h2>
+            <h4>Trinity Verd.</h4>
+        </header>
+        <div class="about-section__card-info">
+            <p>At <b>Trinity Verd,</b> we are passionate about harnessing the power of nature <b>to deliver
+                high-quality</b> agricultural products that make a difference. Specializing in <b>castor oil
+                plants,</b> we are committed to sustainability, innovation, and excellence in every step of our
+                operations. </br>Working closely with local farmers and partners, we ensure <b>ethical farming
+                    practices</b> and empower communities while <b>preserving the environment.</b> We take pride in
+                fostering <b>strong relationships</b> with local farmers, empowering them with the knowledge and
+                resources to farm responsibly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us section-->
+<div class="container1">
+<div class="why__us" id="why_us">
+    <div class="service-box4">
+        <div class="text-box4">
+            <h4><b>Why Choose Us</b></h4>
+            <p>At <b>Trinity Verd,</b> we are commited to transforming castor farming into a <b>profitable and
+                sustainable venture</b> for farmers. With us, you don't get just a buyer- you get a <b>commited
+                partner</b> with you every step of the way. We ensure you have the <b>resources, knowledge and
+                support</b> needed to succeed. </br></br> <b>Here is more reasons why you should work with
+                us:</b></br>
+                1. <b>Guaranteed Market</b> for your harvest.</br>
+                2. <b>High-breed planting seeds</b> for maximum yield even with small rainfall.</br>
+                3. <b>Expert training</b> on proper farming techniques & <b>continous support.</b></br>
+                4. <b>Risk reduction</b> & sustainable farming.</br>
+                5. Empowering farmers for economic growth.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Mission & Vission section-->
+<div class="mvission">
+    <div class="boxx" data-aos="zoom-in" data-aos-delay="50">
+        <h4>MISSION</h4>
+        <p>To facilitate the world's progress towards green sustainable energy.</p>
+    </div>
+    <div class="boxx" data-aos="zoom-in" data-aos-delay="100">
+        <h4>VISSION</h4>
+        <p>To be one of the top players in the agriculture and energy sector in Kenya and the world. We aim to
+            reach out to as many farmers as possible by 2030. To save the planet at the benefit of farmers.</p>
+    </div>
+</div>
+</div>
+
+<!-- Services session-->
+<section class="common-section" id="process">
+    <div class="common-section__header">
+        <h3><b>Our Services</b></h3>
+        <p>Our <b>roles</b> in the castor value chain</p>
+        <div class="Service">
+            <div class="boxx" data-aos="zoom-in" data-aos-delay="50">
+                <i><img src="{% static 'images/manage.png' %}"></i>
+                <h4><b>Managing castor value chain</b></h4>
+                <p><b>We manage</b> the castor value chain in 2 counties; <b>Kitui(Kitui West, Kitui
+                    East, Kitui Rural, Mwingi North & Mwingi Central) and Makueni(Mbooni West).</b> We
+                    are involved with recruiting farmers interested in planting castor, <b>proper
+                        training of our farmers</b> to ensure they plant accordingly and purchase of the
+                    produce.</p>
+                <div class="service-btn">
+                    <button onclick="location.href='#services'">Learn More</button>
+                </div>
+            </div>
+
+            <div class="boxx" data-aos="zoom-in" data-aos-delay="100">
+                <i><img src="{% static 'images/partner1.png' %}"></i>
+                <h4><b>Partnership with Farmers</b></h4>
+                <p>We <b>partner with farmers</b> from the <b>arid and semi-arid areas</b> of Kenya to
+                    promote sustainable agricultural practices. Our partnership with the farmers is <b>sealed
+                        by a contract</b> dictating we are obligated to purchase the produce once
+                    harvested. We have partnerd with <b>over 13,000 farmers</b> across Kitui and
+                    Makueni. We train our farmers on proper <b>castor planting techniques</b> and guide
+                    them through to harvest.</p>
+            </div>
+            <div class="boxx" data-aos="zoom-in" data-aos-delay="150">
+                <i><img src="{% static 'images/evaluation.png' %}"></i>
+                <h4><b>Monitoring and Evaluation</b></h4>
+                <p>We <b>monitor the plant</b> from planting period to harvesting period. We <b>visit
+                    the farms</b> and check on the <b>germination rate, progress and general health</b>
+                    of the plant and give hindsights to the farmer where neccessary. During this phase
+                    we watch more on <b>crop environment and pests & diseases control.</b> In the cases
+                    where pest and diseases are noticed, we <b>issue</b> the farmers with the <b>appropriate
+                    pesticides.</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process section-->
+<section class="process-section" id="services">
+    <div class="processbg">
+        <div class="process-section__header">
+            <h3><b>Our Farming Process</b></h3>
+            <p>How we do our farming</p>
+        </div>
+        <div class="service-header">
+            <h2><b>Farmer Recruitment</b></h2>
+        </div>
+        <div class="service-box" data-aos="fade-up" data-aos-delay="50">
+            <div class="text-box">
+                <p>During this phase we partner with <b>local administrations</b> and organize
+                    <b>Barazas</b> where we educate the locals about castor and <b>recruit interested
+                        farmers.</b> We record the details of the farmers and stay in constant communication
+                    with them.</p>
+            </div>
+            <div class="slideshow-box">
+                <img src="{% static 'images/recru1.jpg' %}" alt="Photo 1">
+                <img src="{% static 'images/recru2.jpg' %}" alt="Photo 2">
+                <img src="{% static 'images/recru1.jpg' %}" alt="Photo 3">
+            </div>
+        </div>
+        <div class="service-header">
+            <h2><b>Seed Distribution.</b></h2>
+        </div>
+        <div class="service-box1" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-box1">
+                <p>During the <b>seed distribution phase,</b> we distribute <b>hybrid planting seeds</b> to
+                    farmers as we continue to educate them on proper castor <b>farming techniques.</b> More
+                    farmers are also recruited during this phase.</p>
+            </div>
+            <div class="slideshow-box1">
+                <img src="{% static 'images/seed1.jpg' %}" alt="Photo 1">
+                <img src="{% static 'images/seed2.jpg' %}" alt="Photo 2">
+                <img src="{% static 'images/seed1.jpg' %}" alt="Photo 3">
+            </div>
+        </div>
+        <div class="service-header">
+            <h2><b>Mapping</b></h2>
+        </div>
+        <div class="service-box2" data-aos="fade-up" data-aos-delay="150">
+            <div class="text-box2">
+                <p>During this phase, <b>we map the planted acres</b> as we <b>monitor</b> and
+                    <b>evaluate</b> the germination rate and the <b>overall health</b> of the crop. We offer
+                    hindsights to farmers where neccesary like when weeding is needed.</p>
+            </div>
+            <div class="slideshow-box2">
+                <img src="{% static 'images/evmon1.jpg' %}" alt="Photo 1">
+                <img src="{% static 'images/evmon2.jpg' %}" alt="Photo 2">
+                <img src="{% static 'images/farmer.jpg' %}" alt="Photo 3">
+            </div>
+        </div>
+        <div class="service-header">
+            <h2><b>Harvest and Purchase</b></h2>
+        </div>
+        <div class="service-box3" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-box3">
+                <p>At the end of the planting season is the harvest. <b>We educate</b> our farmers on <b>proper
+                    harvest and storage techniques</b> in order to avoid post-harvest losses. </br> After
+                    the farmer harvests the castor, <b>we purchase it at competitive prices</b> in both
+                    clean and panicle states. We also have <b>decorticators in circulation</b> which help
+                    the farmers thresh the castor more effectively.</p>
+            </div>
+            <div class="slideshow-box3">
+                <img src="{% static 'images/thresher2.jpg' %}" alt="Photo 1">
+                <img src="{% static 'images/purchase1.jpg' %}" alt="Photo 2">
+                <img src="{% static 'images/harvest1.jpg' %}" alt="Photo 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacts section-->
+<div class="contacts-section" id="contacts">
+    <section class="contact-card">
+        <header class="contact-card__header">
+            <h2><b>Our Contacts</b></h2>
+            <h4>You can reach us through:</h4>
+        </header>
+        <div class="contact-info">
+            <div class="contact-info__group">
+                <div class="contact-info__logo">
+                <img src="{% static 'images/logo.png' %}" alt="Sample Image" class="image-left" width="150">
+                </div>
+                <div class="contact-info__additional">
+                    <p>Having trouble or query?</p>
+                    <p>Call or Email us via the details below.</p>
+                    <p>Or come visit us.</p>
+                </div>
+                <div class="contact-info__vcard vcard">
+                    <h4>Trinity Verd</h4>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        <a class="fas fa-map-marker-alt" href="https://maps.app.goo.gl/t1SgRbD9Sf6XAKpf9"
+                           target="_blank">
+                            <span class="country-name">: Sartaj Building: 5th Floor</span>,&nbsp;
+                            <span class="locality">Machakos</span>,&nbsp;
+                            <span class="address">Kenya</span></a>
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="200">
+                        <a class="fas fa-envelope"
+                           href="mailto:support@trinityverd.co.ke">: support@trinityverd.co.ke</a>
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="300">
+                        <a class="fas fa-phone" href="tel:+254 721 479 166">: 0721 479 166</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4209810172515!2d37.261249010153506!3d-1.5164380984629569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f80d1f524353b%3A0xe2905cda8ac3364c!2sSartaj%20Shopping%20Mall!5e0!3m2!1sen!2ske!4v1740288465395!5m2!1sen!2ske"
+    width="99%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    
+</main>
+
+<!--Footer Section -->
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+        <p>All Rights Reserved.</br> &copy; 2025 Trinity Verd.</p>
+    </div>
+</footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000, // Animation duration (default is 400ms)
+        once: true, // Animation runs only once
+    });
+</script>
+
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<script defer src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
